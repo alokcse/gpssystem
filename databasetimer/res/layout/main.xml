@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="INFORMATION"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:typeface="monospace" >
+    </TextView>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.02" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+             android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_gravity="center_horizontal">
+			<TextView 
+			 android:id="@+id/TextView02" 
+			 
+			 android:layout_width="wrap_content"
+		     android:layout_height="wrap_content" 
+		     android:text="LATITUDE:"
+		     
+			 android:textSize="15sp" 
+		     android:typeface="serif"
+		     android:textColor="#FFFFFF">	 
+		        </TextView>
+		        <EditText
+			    android:id="@+id/txtlat" 
+			    
+			    android:layout_height="60px"
+				android:layout_width="150px" 
+				android:keepScreenOn="true"
+				android:singleLine="false" 
+				android:width="200px"
+				android:numeric="decimal">
+			    
+			</EditText>
+			</TableRow>>
+        <TableRow 
+		    android:id="@+id/TableRow02" 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_gravity="center_horizontal">
+		
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LONGITUDE :"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:typeface="serif" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtlong"
+            android:layout_width="150px"
+            android:layout_height="60px"
+            android:keepScreenOn="true"
+            android:singleLine="false"
+            android:width="200px" 
+            android:numeric="decimal">
+
+        </EditText>
+</TableRow>
+</TableLayout>
+
+    <TableLayout 
+	    android:id="@+id/TableLayout02"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal">
+        <TableRow 
+		    android:id="@+id/TableRow01" 
+		    android:layout_height="wrap_content" 
+		    android:layout_width="fill_parent">
+        <Button
+			    android:id="@+id/btnreset"
+			    
+			     
+			    android:layout_height="50px"
+				android:layout_width="100px" 
+				android:width="80dip" 
+				android:scrollHorizontally="false" 
+				android:text="Reset"
+				android:typeface="serif">
+			</Button>
+			<Button
+			    android:id="@+id/btnAdd"
+			    
+			    android:layout_height="50px"
+				android:layout_width="100px" 
+				android:width="80dip" 
+				android:scrollHorizontally="false"
+				android:text="Add"
+				android:typeface="serif">
+				
+			    
+			</Button>
+			<Button
+			    android:id="@+id/btnShow"
+			    
+				android:layout_height="50px"
+				android:layout_width="100px"
+				android:width="80dip"
+				android:text="Show"
+				android:typeface="serif" 
+				>
+			    
+			</Button>
+        </TableRow>
+        </TableLayout>
+
+</LinearLayout>
